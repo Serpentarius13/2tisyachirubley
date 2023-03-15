@@ -1,0 +1,90 @@
+.services {
+  &__wrapper {
+    width: 100%;
+
+    padding: 6rem 0;
+    background-color: $orange-light;
+
+    min-height: 64.6rem;
+  }
+
+  &__inner {
+    @include wrapper;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 7.6rem;
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__card {
+    width: 28.3rem;
+    height: 23.2rem;
+
+    border-radius: 3rem;
+
+    background-color: rgb(73, 148, 249, 0.76);
+
+    @include flexCenter;
+
+    flex-direction: column;
+    gap: 4.1rem;
+
+    &-circle {
+      --width: 8.9rem;
+      width: var(--width);
+      height: var(--width);
+
+      @include flexCenter;
+
+      background-color: $blue;
+
+      border-radius: 10rem;
+
+      box-shadow: $shadow-small;
+
+      img {
+        --width: 3.2rem;
+        width: var(--width);
+        height: var(--width);
+      }
+    }
+
+    p {
+      font-size: 2.4rem;
+      font-weight: 500;
+      color: white;
+    }
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    &-buttons {
+      @include flexCenter;
+      margin-right: 1.2rem;
+      button {
+        width: 7rem;
+        height: 7rem;
+        background-color: white;
+
+        @include flexCenter;
+
+        &:first-child {
+          border-right: 1px solid #f0f0f0;
+        }
+
+        img {
+          width: 3.2rem;
+          height: 3.2rem;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}

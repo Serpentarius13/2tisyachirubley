@@ -1,12 +1,6 @@
 .hero {
-  h2 {
-    margin-bottom: 2.9rem;
-  }
-
   &__wrapper {
     @include wrapper;
-
-    background-color: lightblue;
 
     display: flex;
     flex-direction: column;
@@ -19,6 +13,8 @@
       padding-right: 2rem;
     }
   }
+
+  
 
   &__cards {
     display: grid;
