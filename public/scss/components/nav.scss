@@ -1,0 +1,77 @@
+.nav {
+  &__wrapper {
+    min-height: 7.4rem;
+
+    background-color: $orange-bright;
+  }
+
+  &__inner {
+    @include wrapper;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__left {
+    @include flexCenter;
+    gap: 3.3rem;
+  }
+
+  &__button {
+    background: linear-gradient(#ff9835, #ff840f);
+    height: 7.3rem;
+    min-width: 8rem;
+
+    @include flexCenter;
+    flex-direction: column;
+
+   
+    span {
+      width: 2.4rem;
+      border-bottom: white 1px solid;
+      margin-bottom: 0.9rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+
+
+  &__middle {
+    @include flexCenter;
+    gap: 6rem;
+
+    p {
+        color: white;
+        font-weight: 600;
+        font-size: 1.6rem;
+
+    }
+  }
+  &__right {
+
+
+    padding: 2rem;
+
+    background-color: $blue;
+    @include flexCenter;
+    gap: 3.2rem;
+
+    img {
+        width: 3.4rem;
+        height: 3.4rem;
+        object-fit: cover;
+
+    }
+
+    p {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: white;
+        border-bottom: 1px dashed white;
+    }
+  }
+}

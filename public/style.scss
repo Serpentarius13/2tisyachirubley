@@ -1,0 +1,29 @@
+@import "./scss/auxi/fonts.scss";
+@import "./scss/auxi/normalize.scss";
+@import "./scss/auxi/variables.scss";
+@import "./scss/auxi/mixins.scss";
+
+@import "./scss/components.scss";
+
+@import "./scss/components/header.scss";
+@import "./scss/components/nav.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+html {
+  font-size: 10px;
+
+  font-family: "Gilroy", sans-serif;
+
+  font-weight: 400;
+}

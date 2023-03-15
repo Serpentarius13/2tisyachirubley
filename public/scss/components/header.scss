@@ -1,0 +1,87 @@
+.header {
+  &__wrapper {
+    width: 100vw;
+    padding: 2.5rem 0;
+    background-color: $orange-light;
+
+    @include flexCenter;
+  }
+
+  &__inner {
+    @include wrapper;
+    @include flexCenter;
+  }
+
+  &__left {
+    @include flexCenter;
+    gap: 3.3rem;
+
+    h2 {
+      padding-right: 3.3rem;
+      margin-right: 3.3rem;
+      border-right: 1px solid $orange-medium;
+    }
+  }
+
+  &__right {
+    @include flexCenter;
+    gap: 8.3rem;
+  }
+
+  &__text {
+    &-small {
+    }
+
+    &-black {
+    }
+  }
+
+  &__logo {
+    width: 8rem;
+    height: 8rem;
+    background-color: rgb(255, 233, 175, 0.39);
+
+    box-shadow: $shadow-big;
+
+    border-radius: 4rem;
+
+    @include flexCenter;
+    img {
+      width: 4.8rem;
+      height: 4.6rem;
+      object-fit: cover;
+    }
+  }
+
+  &__icon {
+    @include flexCenter;
+    gap: 0.8rem;
+
+    &-left {
+      width: 5rem;
+      height: 5rem;
+      background-color: white;
+
+      border-radius: 50%;
+
+      @include flexCenter;
+      img {
+        width: 1.725rem;
+        height: 1.725rem;
+        object-fit: cover;
+      }
+    }
+
+    &-right {
+      p {
+        font-size: 1.2rem;
+        font-weight: 300;
+      }
+
+      span {
+        font-size: 1.6rem;
+        font-weight: 700;
+      }
+    }
+  }
+}
