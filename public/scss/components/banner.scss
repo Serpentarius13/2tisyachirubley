@@ -18,9 +18,7 @@
   }
 
   &__left {
-    h1 {
-      margin: 0;
-    }
+    
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -65,12 +63,7 @@
     }
   }
 
-  &__title {
-    font-size: 4rem;
-    font-weight: 700;
-    font-family: "Comfortaa", "sans-serif";
-    max-width: 64.5rem;
-  }
+ 
   &__subtitle {
     font-weight: 500;
     font-size: 1.4rem;

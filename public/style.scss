@@ -3,11 +3,16 @@
 @import "./scss/auxi/variables.scss";
 @import "./scss/auxi/mixins.scss";
 
+@import "./scss/auxi/media.scss";
+
+
+
 @import "./scss/components.scss";
 
 @import "./scss/components/header.scss";
 @import "./scss/components/nav.scss";
 @import "./scss/components/banner.scss";
+@import "./scss/components/hero.scss";
 
 * {
   margin: 0;
@@ -28,4 +33,3 @@ html {
 
   font-weight: 400;
 }
-

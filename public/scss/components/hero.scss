@@ -1,0 +1,78 @@
+.hero {
+  h2 {
+    margin-bottom: 2.9rem;
+  }
+
+  &__wrapper {
+    @include wrapper;
+
+    background-color: lightblue;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8.2rem;
+
+    padding: 8.2rem 0 12.3rem 0;
+
+    @include ltDesktop {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(33rem, 1fr));
+    gap: 2.8rem;
+  }
+
+  &__card {
+    height: 35.6rem;
+
+    border-radius: 3rem;
+    background-color: blue;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    flex-direction: column;
+
+    padding: 1.2rem 5.9rem;
+
+    background-color: rgb(251, 142, 38, 0.5);
+
+    position: relative;
+    counter-increment: figure;
+
+    p {
+      margin-right: auto;
+
+      font-size: 2.4rem;
+      font-weight: 700;
+      position: relative;
+
+      &::before {
+        content: "0" counter(figure);
+
+        /* 01 */
+
+        @include absoluteCenter;
+        @include flexCenter;
+        top: 75%;
+
+        font-weight: 800;
+        font-size: 12.8rem;
+
+        color: rgba(255, 255, 255, 0.1);
+      }
+    }
+
+    img {
+      width: 19.8rem;
+      height: 24.6rem;
+      object-fit: cover;
+      z-index: 1;
+    }
+  }
+}

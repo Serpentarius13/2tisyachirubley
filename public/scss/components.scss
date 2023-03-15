@@ -12,3 +12,18 @@
 
   padding: 0.7rem 3rem;
 }
+
+.title {
+  @include comfortaa;
+  font-size: 4rem;
+  font-weight: 700;
+
+  max-width: 64.5rem;
+}
+
+.subtitle {
+  @include comfortaa;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
