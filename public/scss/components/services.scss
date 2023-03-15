@@ -9,12 +9,7 @@
   }
 
   &__inner {
-    @include wrapper;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 7.6rem;
+    @include section;
   }
 
   &__cards {

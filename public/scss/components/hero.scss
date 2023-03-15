@@ -1,20 +1,8 @@
 .hero {
   &__wrapper {
-    @include wrapper;
-
-    display: flex;
-    flex-direction: column;
-    gap: 8.2rem;
-
+    @include section;
     padding: 8.2rem 0 12.3rem 0;
-
-    @include ltDesktop {
-      padding-left: 2rem;
-      padding-right: 2rem;
-    }
   }
-
-  
 
   &__cards {
     display: grid;

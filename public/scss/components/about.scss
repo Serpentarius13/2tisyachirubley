@@ -1,0 +1,29 @@
+.about {
+  &__wrapper {
+    padding: $section-padding;
+  }
+
+  &__inner {
+    @include section;
+  }
+
+
+  &__bottom {
+    display: flex;
+    gap: 4rem;
+
+
+    &-left {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+
+        p {
+            font-size: 1.6rem;
+            font-weight: 500;
+            line-height: 1.5;
+        }
+    }
+  }
+}
