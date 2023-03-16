@@ -21,13 +21,13 @@
   font-family: "Comfortaa", "sans-serif";
 }
 
+
+
 @mixin section {
   @include wrapper;
   display: flex;
   flex-direction: column;
   gap: 8.2rem;
-
-  
 
   @include ltDesktop {
     padding-left: 2rem;

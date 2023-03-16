@@ -1,0 +1,40 @@
+.feedback {
+  &__wrapper {
+    @include section;
+    padding: $section-padding;
+    min-height: 104rem;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+
+    @include ltTablet {
+      flex-direction: column;
+      max-width: 98%;
+      margin: 0 auto;
+    }
+  }
+
+  &__form {
+    min-height: 61rem;
+    max-width: 92.6rem;
+
+    width: 100%;
+
+    @include flexCenter;
+    flex-direction: column;
+
+    gap: 4.4rem;
+
+    &-buttons {
+      width: 100%;
+      max-width: 65rem;
+      display: flex;
+
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 5%;
+    }
+  }
+}
