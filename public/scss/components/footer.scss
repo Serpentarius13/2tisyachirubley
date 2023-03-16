@@ -1,0 +1,31 @@
+.footer {
+  &__wrapper {
+    background-color: $orange-bright;
+
+    padding: 3.8rem 3rem;
+  }
+
+  &__inner {
+    @include wrapper;
+ 
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  &__logoTxt {
+    border: none !important;
+    margin-right: 0 !important;
+    color: white;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+  }
+}

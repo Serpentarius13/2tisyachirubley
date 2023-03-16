@@ -5,7 +5,8 @@
 
 @import "./scss/auxi/media.scss";
 
-@import "./scss/components.scss";
+@import "./scss/small-components/components.scss";
+@import "./scss/small-components/form-components.scss";
 
 @import "./scss/components/header.scss";
 @import "./scss/components/nav.scss";
@@ -18,6 +19,7 @@
 @import "./scss/components/qa.scss";
 @import "./scss/components/feedback.scss";
 @import "./scss/components/map.scss";
+@import "./scss/components/footer.scss";
 
 * {
   margin: 0;
