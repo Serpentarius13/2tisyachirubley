@@ -1,0 +1,20 @@
+.map {
+  &__wrapper {
+    background-color: $orange-light;
+  }
+  &__top {
+    @include section;
+    padding: $section-padding;
+
+    &-bottom {
+      display: flex;
+      gap: 8.3rem;
+    }
+  }
+
+  &__bottom {
+    min-height: 82rem;
+    width: 100%;
+    background-color: $blue;
+  }
+}
