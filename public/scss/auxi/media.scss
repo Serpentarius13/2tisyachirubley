@@ -1,3 +1,9 @@
+@mixin ltDesktopMedium {
+  @media (max-width: 1440px) {
+    @content;
+  }
+}
+
 @mixin ltDesktop {
   @media (max-width: 1200px) {
     @content;

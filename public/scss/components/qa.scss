@@ -1,0 +1,103 @@
+.qa {
+  &__wrapper {
+    padding: $section-padding;
+    min-height: 75.4rem;
+    background-color: $orange-light;
+  }
+
+  &__inner {
+    @include section;
+  }
+
+  &__bottom {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: stretch;
+
+    @include ltTablet {
+      flex-direction: column-reverse;
+
+      max-width: 95%;
+
+      gap: 4rem;
+    }
+  }
+
+  &__left {
+    min-width: 40%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  &__answer {
+    &-btn {
+      padding: 2rem 2.7rem;
+      border-radius: 3rem;
+      background-color: white;
+
+      @include comfortaa;
+      font-weight: 600;
+      font-size: 2rem;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+    p {
+      display: none;
+    }
+  }
+
+  &__right {
+    max-width: 55%;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    gap: 4.4rem;
+
+    @include ltTablet {
+      max-width: 100%;
+    }
+
+    &-text {
+      padding: 6rem 4.5rem;
+      box-shadow: $shadow-small;
+
+      font-size: 1.4rem;
+      font-weight: 600;
+
+      border-radius: 3rem;
+
+      background-color: white;
+
+      z-index: 2;
+
+      position: relative;
+    }
+
+    img {
+      position: absolute;
+      top: -23rem;
+      right: -5%;
+
+      max-width: 60%;
+
+      @include ltTablet {
+        max-width: 30%;
+        top: -15rem;
+        right: 0;
+      }
+
+      @include ltPhone {
+        top: -8rem;
+      }
+    }
+  }
+}

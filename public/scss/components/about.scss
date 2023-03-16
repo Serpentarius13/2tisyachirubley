@@ -5,11 +5,23 @@
 
   &__inner {
     @include section;
+
+    min-height: 46.8rem;
+
+    
   }
 
   &__bottom {
     display: flex;
     gap: 4rem;
+
+    @include ltDesktop {
+      flex-direction: column;
+
+      &-left {
+        gap: 4rem;
+      }
+    }
 
     &-left {
       display: flex;

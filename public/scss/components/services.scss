@@ -13,12 +13,14 @@
   }
 
   &__cards {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+
+    grid-template-columns: repeat(auto-fill, minmax(27rem, 1fr));
+
+    gap: 2.2rem;
   }
 
   &__card {
-    min-width: 28.3rem;
     min-height: 23.2rem;
 
     border-radius: 3rem;
@@ -63,6 +65,7 @@
     &-buttons {
       @include flexCenter;
       margin-right: 1.2rem;
+
       button {
         width: 7rem;
         height: 7rem;
