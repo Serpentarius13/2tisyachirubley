@@ -26,6 +26,10 @@
   font-size: 4rem;
 
   max-width: 64.5rem;
+
+  @include ltTablet {
+    max-width: 80%;
+  }
 }
 
 .subtitle {
