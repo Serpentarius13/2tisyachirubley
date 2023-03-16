@@ -22,7 +22,7 @@
 
     flex-direction: column;
 
-    padding: 1.2rem 5.9rem;
+    padding: 1.2rem 2rem;
 
     background-color: rgb(251, 142, 38, 0.5);
 
@@ -35,6 +35,11 @@
       font-size: 2.4rem;
       font-weight: 700;
       position: relative;
+
+      margin-left: 3.9rem;
+
+      vertical-align: middle;
+      text-align: center;
 
       &::before {
         content: "0" counter(figure);
@@ -53,10 +58,21 @@
     }
 
     img {
-      width: 19.8rem;
+      min-width: 19.8rem;
       height: 24.6rem;
-      object-fit: cover;
+
+      max-width: 35rem;
+
+      object-fit: contain;
       z-index: 1;
+    }
+
+    &.cowie {
+      img {
+        max-width: 20rem;
+
+        position: aboslute;
+      }
     }
   }
 }
