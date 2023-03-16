@@ -8,6 +8,7 @@
   &__reviews {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(48rem, 1fr));
+    gap: 1rem;
   }
 
   &__review {
@@ -15,7 +16,13 @@
     max-width: 48rem;
 
     @include ltTablet {
-      max-width: 90%;
+      max-width: 70%;
+
+      padding: 2.3rem 2rem;
+    }
+
+    @include ltPhone {
+      padding: 1rem 1rem 1rem 0;
     }
 
     &-top {

@@ -62,9 +62,15 @@
   &__top {
     display: flex;
     justify-content: space-between;
+
+   
     &-buttons {
       @include flexCenter;
       margin-right: 1.2rem;
+
+      @include ltTablet {
+        display: none;
+      }
 
       button {
         width: 7rem;

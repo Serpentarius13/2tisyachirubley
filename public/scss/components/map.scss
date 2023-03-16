@@ -9,6 +9,15 @@
     &-bottom {
       display: flex;
       gap: 8.3rem;
+      
+      @include ltTablet {
+        gap: 4rem;
+        flex-wrap: wrap;
+      }
+
+      @include ltPhone {
+        gap: 2rem;
+      }
     }
   }
 
