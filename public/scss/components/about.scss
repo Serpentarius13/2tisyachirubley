@@ -7,23 +7,40 @@
     @include section;
   }
 
-
   &__bottom {
     display: flex;
     gap: 4rem;
 
-
     &-left {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      &__top {
         display: flex;
         flex-direction: column;
         gap: 2rem;
+      }
+      p {
+        font-size: 1.6rem;
+        font-weight: 500;
+        line-height: 1.5;
+      }
+    }
+  }
 
+  &__stats {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
 
-        p {
-            font-size: 1.6rem;
-            font-weight: 500;
-            line-height: 1.5;
-        }
+  &__stat {
+    max-width: 19.5rem;
+
+    p {
+      font-size: 1.4rem;
+      font-weight: 500;
     }
   }
 }
