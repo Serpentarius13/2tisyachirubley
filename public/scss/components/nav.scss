@@ -41,6 +41,10 @@
     @include flexCenter;
     gap: 6rem;
 
+    @include ltDesktopSmall {
+      display: none;
+    }
+
     p {
       color: white;
       font-weight: 600;

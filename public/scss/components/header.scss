@@ -5,16 +5,39 @@
     background-color: $orange-light;
 
     @include flexCenter;
+
+  
   }
 
   &__inner {
     @include wrapper;
     @include flexCenter;
+
+
+    gap: 2rem;
+
+    @include ltDesktop {
+      flex-direction: column;
+      gap: 2rem;
+
+      h2 {
+        margin: 0;
+        padding: 0;
+        border: none;
+      }
+    }
   }
 
   &__right {
     @include flexCenter;
     gap: 8.3rem;
+
+
+
+    @include ltDesktop {
+      gap: 3rem;
+      flex-wrap: wrap
+    }
   }
 
   &__text {

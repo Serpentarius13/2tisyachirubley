@@ -7,6 +7,13 @@
 
     display: flex;
     align-items: center;
+
+    @include ltDesktopSmall {
+      flex-direction: column-reverse;
+      min-height: auto;
+      padding: 2rem;
+      padding-left: 0;
+    }
   }
 
   &__inner {
@@ -15,10 +22,14 @@
     height: 100%;
     display: flex;
     align-items: center;
+
+    @include ltDesktopSmall {
+      max-width: 90%;
+      
+    }
   }
 
   &__left {
-    
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -57,13 +68,13 @@
     font-size: 1.4rem;
     font-weight: 600;
 
+    z-index: 1;
     max-width: 25.8rem;
     img {
       max-width: 1.7rem;
     }
   }
 
- 
   &__subtitle {
     font-weight: 500;
     font-size: 1.4rem;
@@ -86,6 +97,14 @@
 
     @include flexCenter;
 
+    @include ltDesktopMedium {
+      justify-content: flex-end;
+    }
+
+    @include ltDesktopSmall {
+      display: none;
+    }
+
     &-image {
       &__one {
         @include absoluteCenter;
@@ -93,16 +112,20 @@
         aspect-ratio: 16/9;
 
         z-index: 1;
+
+        @include ltDesktopMedium {
+          inset: auto auto auto auto;
+          right: 0;
+          transform: none;
+        }
       }
 
       &__two {
         position: absolute;
-        width: 345px;
-        height: 345px;
+        top: 15%;
+        height: 24rem;
 
-        border-radius: 100%;
-
-        border: 1px dashed #fb8e26;
+        overflow: hidden;
       }
     }
   }
