@@ -1,0 +1,34 @@
+.vaccine {
+  &__wrapper {
+    @include section;
+    padding: $section-padding;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    &-left {
+      display: flex;
+      flex-direction: column;
+
+      gap: 3rem;
+
+      max-width: 107rem;
+
+      p {
+        @include comfortaa;
+        font-size: 1.8rem;
+        font-weight: 600;
+      }
+    }
+
+    img {
+      max-width: 31.8rem;
+
+      transform: scale(1.08);
+
+      object-fit: cover;
+    }
+  }
+}
