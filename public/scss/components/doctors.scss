@@ -1,0 +1,39 @@
+.doctors {
+  &__wrapper {
+    padding: $section-padding;
+
+    background-color: $orange-light;
+    min-height: 86.4rem
+  }
+
+  &__inner {
+    @include section;
+  }
+
+  &__cards {
+    display: grid;
+
+    grid-template-columns: repeat(auto-fill, minmax(34rem, 1fr));
+    gap: 4.5rem;
+  }
+
+  &__card {
+    @include flexCenter;
+    flex-direction: column;
+    gap: 2.3rem;
+
+    background-color: rgba(255, 255, 255, 0.69);
+
+    min-height: 36rem;
+
+    border-radius: 3rem;
+
+    box-shadow: $shadow-small;
+
+    p {
+      padding: 1rem 4.2rem;
+      background-color: white;
+      border-radius: 3rem;
+    }
+  }
+}
