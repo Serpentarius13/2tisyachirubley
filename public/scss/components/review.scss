@@ -1,0 +1,63 @@
+.review {
+  &__wrapper {
+    @include section;
+    padding: $section-padding;
+    min-height: 97rem;
+  }
+
+  &__reviews {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(48rem, 1fr));
+  }
+
+  &__review {
+    padding: 3.7rem 4.1rem;
+    max-width: 48rem;
+
+    @include ltTablet {
+      max-width: 90%;
+    }
+
+    &-top {
+      @include comfortaa;
+      font-weight: 500;
+      p {
+        font-size: 1.6rem;
+      }
+
+      span {
+        font-size: 1.4rem;
+        color: $gray;
+      }
+
+      margin-bottom: 1.9rem;
+    }
+
+    &-text {
+      font-size: 1.4rem;
+      font-weight: 600;
+      padding-right: 0.3rem;
+
+      margin-bottom: 3rem;
+    }
+
+    &-button {
+      color: $blue;
+      text-decoration: underline;
+      font-size: 1.4rem;
+      padding-bottom: 1.4rem;
+    }
+  }
+
+  &__stars {
+    display: flex;
+
+    gap: 1.1rem;
+  }
+
+  &__star {
+    width: 2.4rem;
+    height: 2.4rem;
+    object-fit: cover;
+  }
+}
