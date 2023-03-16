@@ -8,6 +8,16 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+
+    @include ltTablet {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 2rem;
+
+        img {
+           width: 100%;
+        }
+    }
     &-left {
       display: flex;
       flex-direction: column;

@@ -1,0 +1,79 @@
+.pricing {
+  &__wrapper {
+    min-height: 60rem;
+    max-width: 100vw;
+
+    display: flex;
+
+    @include ltDesktop {
+        flex-direction: column-reverse;
+
+        img {
+            max-width: 85%;
+            margin: 0 auto;
+        }
+    }
+  }
+
+  &__left {
+    background-color: $orange-light;
+    width: 100%;
+    max-width: 120rem;
+    flex: 1;
+
+    padding: $section-padding;
+
+    display: flex;
+
+    justify-content: center;
+
+
+
+    &-inner {
+      @include section;
+
+      max-width: 80rem;
+    }
+
+    &-bottom {
+      display: flex;
+      flex-direction: column;
+
+      gap: 2.4rem;
+
+      width: 100%;
+    }
+  }
+
+  &__price {
+    display: flex;
+    justify-content: space-between;
+
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+
+    gap: 10%;
+
+    p {
+      padding: 1rem;
+      background-color: white;
+      width: 100%;
+
+      border-radius: $border-small;
+
+      @include flexCenter;
+
+      font-size: 2.4rem;
+      font-weight: 600;
+      gap: 3rem;
+
+      span {
+        font-size: 4rem;
+      }
+    }
+  }
+
+  &__right {
+    max-width:40%;
+  }
+}
